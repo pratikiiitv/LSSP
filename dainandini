@@ -22,3 +22,67 @@ Structure and Interpretation of Signals and Systems by Edward A. Lee and Pravin 
 20260806
 Lecture 1
 
+4. Video Signals (30fps) 
+3. Color - RGB vs Color Map - Grayscale?
+1. Physical Phenomena -> Signal
+2. Signal and System -> Space?
+5. Multivariable - Multiinput
+
+* Is time a phenomena?
+
+Empirical World          (Homo)Morphism         Formal World
+                            <->
+P(x,y,z,t)              microphone/ speaker!    f(t)                   
+                                                Integrator
+                                                Differentiator
+                                                Amplification    
+(P1 + P2)(x,y,z,t)                              (f1+f2)(t)=
+= P1(x,y,z,t) + P2(x,y,z,t)                     f1(t)+f2(t) 
+
+increase intensity                              f -> \alpha * f
+
+                                                t \in Real (<)
+                                                f(t) \in Real (+)
+
+Homomorphism : Structure preserving map 
+
+V.0 Model of Pressure recorded at a point
+A real function of real variable.
+f: Real -> Real
+Set of all functions S:={f|f:R->R}
+
+(S, +, \alpha \in R) Vector Space
+f \in S and \alpha \in R => \alpha * f \in S
+f1, f2 \in S => f1 + f2 \in S 
+
+Operate vs Transform
+D->D        D->R 
+
+System : [R->R] -> [R->R]
+h : (S,+,\alpha) -> (S,+,\alpha) 
+
+Sound! Press Record?
+Analog Sound->Microphone->Sampling->Quantization->Digital Sound
+                          
+Sampling rate and Quntization Levels / Number of Bits
+
+Q.1 Sound sampled at 40k and quantized with 256 levels. How
+many bits are required to store 1 sec of recording?
+
+Q.2 Is image a function?
+I : [0,w]X[0,h] -> {Real,Real,Real}
+I : {0,...,1023}X{0,...,1023} -> {0,...,255}^3
+
+f : D -> R
+# distinct function are |R|^|D|
+
+Q.3 Is video a function?
+V : {0,...,N}^2 X Real -> {0,...,255}^3 
+Persistence of vision -> Sampling in temporal domain
+V : {0,...,N}^2 X {1,...,100}_dt -> {0,...,255}^3 
+
+
+
+
+
+
