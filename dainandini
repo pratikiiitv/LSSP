@@ -141,5 +141,19 @@ corresponding matrix representation.
 
 Analogy: Null space of a matrix !-> Filtering in Action. 
 
+20260814
+Lab1
 
+1. 20 Hz sinusoid sampled at different rates
+2. Linear Combination of Sinusoids and 
+approximation to square wave
+3. Spatial Sinusoids 
+4. Generation of various Signals
+4.1 AM 
+4.2 FM 
+4.3 PM 
+5. Ensemble of Sample Functions 
+6. Noise a foe or a friend?
+7. Moving Average Filter and its Impulse response?
+Frequency response?
 
