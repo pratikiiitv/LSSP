@@ -156,4 +156,7 @@ approximation to square wave
 6. Noise a foe or a friend?
 7. Moving Average Filter and its Impulse response?
 Frequency response?
+8. Representing Moving Average Filter as 
+matrix vector multiplication for a finite 
+sequence 
 
