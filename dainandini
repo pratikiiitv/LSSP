@@ -81,8 +81,65 @@ V : {0,...,N}^2 X Real -> {0,...,255}^3
 Persistence of vision -> Sampling in temporal domain
 V : {0,...,N}^2 X {1,...,100}_dt -> {0,...,255}^3 
 
+20260813
+Lecture 2
 
+1. Imperative vs Declarative (20251503039)
+2. Difference Equations in the Context of LSSP (20251503019)
+3. State Machine (20251503001)
+4. Composing Systems and Block Diagram (20251503010)
+5. Periodic Functions? (20251503028) 
 
+Joseph Fourier
+Heat Equation : Second order Partial Differential Equation
+Solution : Linear Combination of Sinusoids!
+
+Cauchy!
+Sequence : N -> Q 
+
+Equality is always in terms of inequality
+x = y
+|x-y| < e, for all e>0
+
+Q. What is the resolution of your computation?
+
+x = sin(2*pi*f*t), f=1000
+t = n * dt
+dt = 1/Fs, Fs = 10000;
+
+Nyquist Sampling Theorem
+Moving Average Filter 
+
+A := [R^m->R^n] 
+B := [R^n->R^k]
+C := [R^k->R^l]
+
+D = C*B*A
+D is a composite system [R^m->R^l]
+
+Linearity -> Structure Preserving Function!
+1. Superposition
+2. Homogeneity
+
+x -> f(x)
+a*x -> f(a*x) = a*f(x) 
+
+x1 -> f(x1)
+x2 -> f(x2)
+x1+x2 -> f(x1+x2) = f(x1) + f(x2)
+
+Linearity?
+x -> x+5 
+x -> log(x) 
+x -> 5*x 
+
+(x1,x2) -> (x1-x2, x1+x2)
+
+For finite dimensional vector spaces all the Linear functions
+are nothing but linear transformations and would have 
+corresponding matrix representation.
+
+Analogy: Null space of a matrix !-> Filtering in Action. 
 
 
 
