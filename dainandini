@@ -144,7 +144,7 @@ Analogy: Null space of a matrix !-> Filtering in Action.
 20260814
 Lab1
 
-1. 20 Hz Cosine sampled at different rates
+1. Observe 20 Hz Cosine sampled at different sampling rates.
 Generate a 20 Hz Cosine signal. Sample the function
 at the following sampling frequencies :
 a. 100 Hz
@@ -153,7 +153,7 @@ c. 40 Hz
 d. 30 Hz
 e. 20 Hz
 f. 10 Hz
-Write your observations about the sampled version.
+Write your observations about the sampled versions.
 
 2. Sketch function sinc(t) = sin(t)/t for t\in (-\infty,\infty)
 
