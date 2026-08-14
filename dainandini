@@ -155,27 +155,54 @@ e. 20 Hz
 f. 10 Hz
 Write your observations about the sampled version.
 
-2. Sketch function sinc(t) = sin(t)/t 
+2. Sketch function sinc(t) = sin(t)/t for t\in (-\infty,\infty)
 
 3. Linear Combination of Sinusoids and approximation to square wave
 A square wave is defined as 
-x(t)    = 1, t \in [0,1) 
-        = -1, t \in [1, 2)
+x(t)    = 1, t \in [2N,2N+1), N \in \mathbb{Z}  
+        = -1, t \in [2N+1, 2N+2), N \in \mathbb{Z}
+
 
 4. Spatial Sinusoids and Periodic Images
 Concept of spatial frequency (cycles per pixel)
+Create following 200x200 size grayscale image with 8 bit resolution 
+4.1 Horizontally - frequency of sinusoid is 1/200 cycles per pixel
+4.2 Vertically - frequency of sinusoid is 1/200 cycles per pixel
+4.2 Horizontal-Vertical Frequency of 1/100 cyelces per pixel and 
+1/50 cycles per pixel 
+
 
 5. Generation of various Signals
-4.1 AM 
-4.2 FM 
-4.3 PM 
+5.1 Amplitude Modulation 
+Carrier Frequency of fc = 1000 Hz
+Signal Frequency of fs = 10 Hz 
+x(t) = A(t) sin(2*pi*fc*t)
+A(t) = sin(2*pi*fs*t) 
+5.2 Chirp signal 
+x(t) = sin(2*pi*100*t^2)
 
 6. Ensemble of Sample Functions 
+Generate noise ensamble : Noise(k, t) using randn for k=256
+where k is number of sample functions.
+Let x(k, t) = sin(2*pi*1000*t) + Noise(k,t)
+Fs = 44100, t=0:1/Fs:2
+Use this ensamble of x(k, t) to create the Average
+X = 1/m \sum_i=1:k x(i, t) for all t
 
-7. Noise a foe or a friend?
+Is Noise a foe or a friend?
 
-8. Moving Average Filter and its Impulse response?
-Frequency response?
+7. Moving Average Filter and its Frequency response?
+For moving average filter [N->R]->[N->R]
+described by the following Difference
+Equation
+y(n) = (x(n) + x(n-1) + ... + x(n-k+1))/k
+Where x(n) is discrete version of x(t)
+
+For x(t) = sin(2*pi*f*t), dt=1/Fs, Fs = 44100, t=0:1/Fs:2
+For various frequencies f \in {10, 50, 100, 500, 1000, 5000, 10000}
+Find out the gain and delay in y(t) w.r.t. x(t).
+
+Plot the frequency vs. gain and delay graphs on log scale.
 
 9. Representing Moving Average Filter as matrix vector multiplication 
 for a finite sequence. 
