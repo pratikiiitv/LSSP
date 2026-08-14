@@ -144,19 +144,39 @@ Analogy: Null space of a matrix !-> Filtering in Action.
 20260814
 Lab1
 
-1. 20 Hz sinusoid sampled at different rates
-2. Linear Combination of Sinusoids and 
-approximation to square wave
-3. Spatial Sinusoids 
-4. Generation of various Signals
+1. 20 Hz Cosine sampled at different rates
+Generate a 20 Hz Cosine signal. Sample the function
+at the following sampling frequencies :
+a. 100 Hz
+b. 50 Hz
+c. 40 Hz
+d. 30 Hz
+e. 20 Hz
+f. 10 Hz
+Write your observations about the sampled version.
+
+2. Sketch function sinc(t) = sin(t)/t 
+
+3. Linear Combination of Sinusoids and approximation to square wave
+A square wave is defined as 
+x(t)    = 1, t \in [0,1) 
+        = -1, t \in [1, 2)
+
+4. Spatial Sinusoids and Periodic Images
+Concept of spatial frequency (cycles per pixel)
+
+5. Generation of various Signals
 4.1 AM 
 4.2 FM 
 4.3 PM 
-5. Ensemble of Sample Functions 
-6. Noise a foe or a friend?
-7. Moving Average Filter and its Impulse response?
+
+6. Ensemble of Sample Functions 
+
+7. Noise a foe or a friend?
+
+8. Moving Average Filter and its Impulse response?
 Frequency response?
-8. Representing Moving Average Filter as 
-matrix vector multiplication for a finite 
-sequence 
+
+9. Representing Moving Average Filter as matrix vector multiplication 
+for a finite sequence. 
 
