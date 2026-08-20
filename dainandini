@@ -142,7 +142,7 @@ corresponding matrix representation.
 Analogy: Null space of a matrix !-> Filtering in Action. 
 
 20260814
-Lab1
+Lab Exercises 1
 
 1. Observe 20 Hz Cosine sampled at different sampling rates.
 Generate a 20 Hz Cosine signal. Sample the function
@@ -206,4 +206,22 @@ Plot the frequency vs. gain and delay graphs on log scale.
 
 9. Representing Moving Average Filter as matrix vector multiplication 
 for a finite sequence. 
+
+20260820
+Lecture 3
+
+Complex Numbers 
+Complex Functions
+Finite Deimensional Vector Space, Normed Space, Inner Product Space 
+l^p and L^p spaces
+[(0,1)->C] space 
+[Z_N -> C] space 
+
+Basic operations on signals 
+Scaling
+Adding
+Shifting
+System Representation 
+
+Are these systems linear?
 
