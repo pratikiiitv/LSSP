@@ -211,17 +211,104 @@ for a finite sequence.
 Lecture 3
 
 Complex Numbers 
+z \in C 
+||z|| = 1, a unit circle
+Euler's Formula
+e(jt) = cos(jt)+j sin(jt)
+
 Complex Functions
-Finite Deimensional Vector Space, Normed Space, Inner Product Space 
-l^p and L^p spaces
+[Domain->C]
+
+Finite Deimensional Vector Space
+(V,+,a\in F) (F is the field)
+F ~ Q, R, C 
+George Cantor 
+(F, +, x)
+(3+j) * (3-j/10) = 1
+Basis 
+Uniquely Identify each vector by linear combination of basis 
+
+Normed Space
+|| . ||: V -> R+ 
+Size of a vector 
+
+Every norm induces a metric
+d(v,u) = || v-u ||
+nearness/ closeness
+
+Inner Product Space
+<.|.>: V x V -> Field 
+correlation 
+
+l^p space 
+{x \in [N\to R] | (\sum_n x_n^p)^{1/p}<\infty} 
+x = {x_0, x_1, x_2, ...}
+e_0 = {1, 0, 0, ...}
+e_i = {0, 0, ..., 1, 0, ...} ~ ith index value is 1
+||x|| = (\sum_i x_i^p)^{1/p} < \infty 
+if p = 2
+||x|| = (\sum_i x_i^2)^{1/2} < \infty 
+<x|y> = \sum_i x_i*y_i
+||x||_2 = \sqrt(<x|x>) = (\sum_i x_i*x_i)^{1/2}
+
+Another model!
+{x \in [Z \to R] | (\sum_n x_n^p)^{1/p}<\infty} 
+
+Question: Reimmanian vs. Lebesgure Integral 
+
+L^p space
 [(0,1)->C] space 
 [Z_N -> C] space 
 
 Basic operations on signals 
+
+Signal Model  [Z \to C]
+x = {...,x_-2, x_-1, x_0, x_1, x_2, ...}
+y = {...,y_-2, y_-1, y_0, y_1, y_2, ...}
+
 Scaling
+a \in C 
+a*x = {...,a*x_-2, a*x_-1, a*x_0, a*x_1, a*x_2, ...}
+
 Adding
+x + y = {..,x_-1+y_-1, x_0+y_0, x_1+y_1, ...}
+
 Shifting
-System Representation 
+Z       = {...,  -2,   -1,   0,    1,   2, ...}        
+x       = {...,x_-2, x_-1, x_0 , x_1, x_2, ...}
+D x     = {...,... , x_-2, x_-1, x_0, x_1, x_2, ...}
+D^2 x   = ?
+D - delay 
+
+D(x+y) = D(x) + D(y)  
+
+y = Dx 
+y_i = x_i-1 
+y(n) = x(n-1) 
 
 Are these systems linear?
 
+Moving Average System
+y(n) = x(n) + x(n-1) + x(n-2)
+y = x + Dx + D^2x 
+Z       = {...,  -2,   -1,    0,   1,    2, ...}        
+x       = {...,x_-2, x_-1,  x_0, x_1,  x_2, ...}
+D x     = {...,... , x_-2, x_-1, x_0,  x_1, x_2, ...}
+D^2 x   = {..., ..., ...., x_-2, x_-1, x_0, x_1, ...}
+y       = { ? }
+
+System Representation 
+x -> h -> y 
+h := system 
+
+x := x_0 + x_1 t + x_2 t^2 
+h := h_0 + h_1 t + h_2 t^2
+
+y := x * h = x_0*h_0 + (x_0*h_1+x_1*h_0) t + (x_0h_2+x1h_1+h_0x_2) t^2
+           + (x2*h1+x1_h2) t^3 + (x2*h2) t^4     
+
+Z       = {  0,          1,             2,     3,        4,       ...}
+x       = {x_0,        x_1,           x_2,     0,        0,       ...}
+h       = {h_0,        h_1,           h_2,     0,        0,       ...}
+y = x*h = {x0h0, x0h1+x1h0, x0h2+x1h1+x2h0, x2h1+x1h2, x2h2,      ...}
+Convolution!
