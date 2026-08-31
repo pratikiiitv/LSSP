@@ -312,3 +312,27 @@ x       = {x_0,        x_1,           x_2,     0,        0,       ...}
 h       = {h_0,        h_1,           h_2,     0,        0,       ...}
 y = x*h = {x0h0, x0h1+x1h0, x0h2+x1h1+x2h0, x2h1+x1h2, x2h2,      ...}
 Convolution!
+
+20260820
+Lab Exercises 2
+
+Some unsolved exercises from Oppenheim's book on 
+Systems and Signal Theory
+Chapter 1, 2
+
+20260827
+Lecture 4
+Quiz - Simple problems on signals and oprations 
+
+20260827
+Lab Exercise 3
+Lois Chapparo
+Introduction to Matalab 
+
+20260903
+Lecture 5
+
+Shift Invariance
+Linear Shift Invariant Systems
+Convolution
+Periodic Functions 
